@@ -16,3 +16,5 @@ Iâ€™m very interested in the liquefaction style shown in these two pictures. Itâ
 
 The coding techniques in the link can help us apply a liquefaction effect to the entire image created by our group. After that, I plan to divide the image into sections and add animation effects to enhance the overall design.Create an effect where the large contains the small, and the small contains the large.
 
+
+
