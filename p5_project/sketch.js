@@ -27,8 +27,8 @@ class lineGroup {
       let offsetX = cos(this.angle) * this.lineSpacing * i;
       let offsetY = sin(this.angle) * this.lineSpacing * i;
 
-      let noiseX = map(noise(this.noiseOffset + i * 0.1), 0, 1, -10, 10);
-      let noiseY = map(noise(this.noiseOffset + i * 0.1 + 100), 0, 1, -10, 10);
+      let noiseX = map(noise(this.noiseOffset + i * 0.1), 0, 1, -100, 100);
+      let noiseY = map(noise(this.noiseOffset + i * 0.1 + 100), 0, 1, -100, 100);
 
       // Draw the line with the calculated offsets.
       line(
@@ -73,9 +73,9 @@ function draw() {
   drawMiddleLayer();// Draw the middle layer.
   drawTopLayer();// Draw the top layer.
 
-  // set perlin noise for line group
+  // set the noise increment for the elements
   rectNoiseOffset += 0.01;
-  triNoiseOffset += 0.01;
+  triNoiseOffset += 0.05;
   quad1NoiseOffset += 0.01;
   quad2NoiseOffset += 0.01;
 }
