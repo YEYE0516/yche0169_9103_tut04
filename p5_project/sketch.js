@@ -64,7 +64,7 @@ function setup() {
 
 function draw() {
   // make the animation doesn't leave path
-  background(255);
+  background(220);
   // Draw all base layer line groups stored in the groups array.
   for (let group of groups) {
     group.draw();
