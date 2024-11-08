@@ -48,7 +48,7 @@ let colorMiddle;// Color for the middle layer.
 let colorTop; // Color for the top layer.
 
 // perlin noise of each elements' offset
-let rectNoiseOffset = 0;
+let rectNoiseOffset = 100;
 let triNoiseOffset = 200;
 let quad1NoiseOffset = 400;
 let quad2NoiseOffset = 600;
@@ -75,9 +75,9 @@ function draw() {
 
   // set the noise increment for the elements
   rectNoiseOffset += 0.01;
-  triNoiseOffset += 0.05;
-  quad1NoiseOffset += 0.01;
-  quad2NoiseOffset += 0.01;
+  triNoiseOffset += 0.01;
+  quad1NoiseOffset += 0.02;
+  quad2NoiseOffset += 0.03;
 }
 
 function drawLineGroups() {
